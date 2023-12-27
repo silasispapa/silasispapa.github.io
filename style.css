@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: background-color 0.5s, color 0.5s;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-image: url("https://y.gy/4V8I");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#navbar {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 3px solid #81a1c1;
+}
+
+#navbar button {
+  font-size: 18px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#container p {
+  margin: 3px;
+  padding: 3px;
+}
+p#error-code {
+  font-size: 25px;
+  font-weight: bold;
+  color: #bf616a;
+}
+
+/* style the start and stop buttons */
+#startstopbutton button {
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 14px;
+  color: #eceff4;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#startstopbutton #srtbtn {
+  background-color: #a3be8c; /* Green */
+}
+
+#startstopbutton #endbtn {
+  background-color: #bf616a; /* Red */
+}
+
+#startstopbutton #srtbtn:hover {
+  background-color: #8b9e7c; /* Darker green on hover */
+}
+
+#startstopbutton #endbtn:hover {
+  background-color: #9c4c5e; /* Darker red on hover */
+}
+
+/* Styles the  slider */
+.sliderbar{
+  background-color: transparent;
+  margin-top: 6px;
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.sliderbar:focus {
+  outline: none;
+}
+
+.sliderbar::-webkit-slider-runnable-track {
+  background: #646669;
+  height: 5px;
+  -webkit-appearance: none;
+  cursor: pointer;
+  
+}
+
+.sliderbar::-webkit-slider-thumb {
+  width: 10px;
+  height: 18px;
+  background: #81a1c1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+  border-radius: 3px;
+  
+}
+.sliderbar::-webkit-slider-thumb:hover {
+  background: #88c0d0;
+}
+
+/* Close Modal dialog styles */
+.modal {
+  transition: background-color 0.3s;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #eceff4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.modal.dark-mode {background-color: #3b4252;}
+
+.modal-content {text-align: center;}
+
+#confirmBtn, #cancelBtn {
+  width: 50px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color:#eceff4;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#confirmBtn {background-color: #a3be8c;}
+#cancelBtn {background-color: #d08770;}
+#confirmBtn:hover {background-color: #7b8c6e;}
+#cancelBtn:hover {background-color: #9c4c5e;}
+
+/* Guide button in navbar*/
+#navbar #manualButton {
+  color: #2e3440;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+#navbar #manualButton.dark-mode {color: #eceff4;}
+/* Guide modal styles */
+#manualModal {background: #eceff4;}
+#manualModal.dark-mode {background-color: #3b4252;}
+#manualModal .modal-content {text-align: left;}
+#manualModal #closeManualBtn {background-color: #a3be8c;}
+/* center-align the close button inside the user manual modal */
+#manualModal .modal-content {text-align: center;}
+#manualModal #closeManualBtn {margin: 0 auto;}
+/* if modal-open, blur background*/
+body.modal-open #navbar,
+body.modal-open #container,
+body.guide-modal-open #navbar,
+body.guide-modal-open #container {
+  filter: blur(5px);
+}
+
+/* Hover effect*/
+#navbar #manualButton:hover, #navbar #modebutton:hover {
+  background-color: #a5c5e5;
+  border-radius: 14px;
+  padding: 3px;
+  transition: ease-in-out 0.4s;
+}
+/* Volume Check Button*/
+
+#volumecheckbtn {
+  display: inline-block;
+  margin-left: 10px; /* Adjust the margin based on your design */
+}
+
+#volumecheck {
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #eceff4;
+  background-color: #81a1c1; 
+}
+
+#volumecheck:hover {
+  background-color: #5e81ac; 
+}
+
+#volumecheck:active {
+  background-color: #88c0d0; 
+}
+
+canvas {
+  border: 1px solid #2e3440;
+  border-radius: 16px;
+}
+

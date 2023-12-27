@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/addons/p5.sound.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="darkmode.js"></script>
+  <script src="togglemanual.js"></script>
+  <title>Sitting Posture Checker</title>
+  <link rel="icon" href="https://y.gy/523O" type="image/png">
+
+</head>
+
+<body>
+  <div id="navbar">
+    <button id="manualButton" onclick="toggleManual()">Guide📘</button>
+    <button id="faceemoji" style="cursor: default;">😎</button>
+    <button id="modebutton"onclick="toggleMode()">☀️</button>
+  </div>
+
+  <div id="container">
+    <p id="camaccess">Please allow camera acces after start.</p>
+    <p id="progstatus">Program not running.</p>
+    <p id="error-code">Waiting user action.</p>
+    <script src="main.js"></script>
+    <script src="alert.js"></script>
+    
+    <div id="canvasarea">
+      <div id="cameracanvas"></div>
+      <div id="volumecanvas"></div>
+    </div>
+    
+    <div id="startstopbutton">
+      <button id="srtbtn" onclick="StartProgram()">
+        <b>Start</b>
+      </button>
+      
+      <button id="endbtn" style="display: none;" onclick="StopProgram()">
+        Stop
+      </button>
+      <div id="volumecheckbtn">
+        <button id="volumecheck" onclick="playsound()">Volume Check</button>
+      </div>
+    </div>
+    
+  </div>
+  <!-- The modal -->
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <p>Do you want to close the tab after stopping the program?</p>
+      <button id="confirmBtn">Yes</button>
+      <button id="cancelBtn">No</button>
+    </div>
+  </div>
+  <!-- User Manual Modal -->
+  <div id="manualModal" class="modal">
+    <div class="modal-content">
+      <p>Please sit in front of the camera and make sure your face and shoulder is visible.</p>
+      <p>The program will start after you click the start button.</p>
+      <p>Make sure you have 7 points detected as shown in the picture.</p>
+      <img src="https://y.gy/51Gu" alt="User Manual Image" width="100%" height="auto">
+      <button id="closeManualBtn"  onclick="toggleManual()">Close</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
