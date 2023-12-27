@@ -118,7 +118,7 @@ function StartProgram() {
       }else{
         changeErrorCode("green");
       }
-    }, 8000);
+    }, 10000);
   }
 }
 

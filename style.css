@@ -154,12 +154,14 @@ p#error-code {
 }
 #navbar #manualButton.dark-mode {color: #eceff4;}
 /* Guide modal styles */
-#manualModal {background: #eceff4;}
+#manualModal {
+  background: #eceff4;
+  text-align: left;
+}
 #manualModal.dark-mode {background-color: #3b4252;}
 #manualModal .modal-content {text-align: left;}
 #manualModal #closeManualBtn {background-color: #a3be8c;}
-/* center-align the close button inside the user manual modal */
-#manualModal .modal-content {text-align: center;}
+#manualModal .modal-content #manualModal-Center {text-align: center;}
 #manualModal #closeManualBtn {margin: 0 auto;}
 /* if modal-open, blur background*/
 body.modal-open #navbar,
