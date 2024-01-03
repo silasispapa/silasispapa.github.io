@@ -348,7 +348,8 @@ function StopProgram() {
   
   modal.style.display = "block";
   confirmBtn.onclick = function() {
-    close();
+    window.open('', '_self')
+    window.close()
   };
 
   cancelBtn.onclick = function() {
