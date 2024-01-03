@@ -11,8 +11,6 @@ function toggleManual() {
             manualButton.innerHTML = 'Guide📘';
             document.body.classList.remove('guide-modal-open');
             document.body.style.backdropFilter = '';
-            windowSizeCheck();
-            drawcameraarea();
         } else {
             manualModal.style.display = 'block';
             manualButton.innerHTML = 'Guide📖';

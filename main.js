@@ -46,6 +46,9 @@ function setup() {
   //resize canvas according to window size
   windowSizeCheck();
   drawcameraarea();
+  fill("#e5e9f0");
+  textSize(30);
+  text("Canvas Area",w/2-70,h/2);
   frameRate(30);
 }
 
