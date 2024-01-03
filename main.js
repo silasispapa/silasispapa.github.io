@@ -46,13 +46,17 @@ function setup() {
   //resize canvas according to window size
   windowSizeCheck();
   drawcameraarea();
+
+  //show "canvas area" text once
   fill("#e5e9f0");
   textSize(30);
   text("Canvas Area",w/2-70,h/2);
+
   frameRate(30);
 }
 
 function StartProgram() {
+  //track start and stop button for hide and show
   const startBtn = document.getElementById('srtbtn');
   const stopBtn = document.getElementById('endbtn');
 
@@ -228,6 +232,7 @@ function changeErrorCode(color){
   }
 }
 
+//draw volume bar area
 function drawvolumearea(){
   volumearea.background('#434c5e');
   volumearea.fill('#e5e9f0');
@@ -236,6 +241,7 @@ function drawvolumearea(){
   image(volumearea, 0, 480-40);
 }
 
+//draw black canvas area
 function drawcameraarea(){
   cameraarea.background(51);
   image(cameraarea,0,0);
@@ -265,6 +271,7 @@ function draw() {
 
   // program started
   if(programstatus==1){
+    //push start a different draw setting
     push();
     translate(video.width, 0);
     scale(-1, 1);
@@ -290,7 +297,7 @@ function draw() {
         ellipse(x, y, 16, 16);
       }
     }
-    pop(); //end of reverse scale
+    pop(); //end of push setting
 
     //text appearance
     fill(255, 0, 255);
@@ -325,17 +332,20 @@ function draw() {
 }
 
 function StopProgram() {
+  //reset all variable to null
   stopbtn_call = true;
   programstatus = 0;
   volumebarstatus = 3;
   slider.hide();
-  noLoop();
-  clear();
-  drawcameraarea();
   video=null;
   poseNet=null;
   pose = null;
   skeleton  = null;
+
+  //stop draw() function and reset canvas
+  noLoop();
+  clear();
+  drawcameraarea();
 
   //hide the manual modal if opened
   const manualModal = document.getElementById('manualModal');
@@ -350,28 +360,33 @@ function StopProgram() {
   const confirmBtn = document.getElementById("confirmBtn");
   
   modal.style.display = "block";
+  //close tab if confirm button clicked
   confirmBtn.onclick = function() {
     window.open('', '_self')
     window.close()
   };
-
+  //refresh page if cancel button clicked
   cancelBtn.onclick = function() {
     modal.style.display = "none";
     location.reload(); //refresh page
   };
 }
 
+//when window resized, call windowSizeCheck()
 function windowResized() {
   windowSizeCheck()
 }
 
+//resize canvas according to window size
 function windowSizeCheck(){
+  //if window size is smaller than canvas size, resize canvas
   if(w>windowWidth){
     w = windowWidth;
     h = w*3/4;
     resizeCanvas(w,h);
     slider.position(cnv.position().x+w-160*w/640,cnv.position().y+h-30*w/640);
   }
+  //if window size is bigger than canvas size, remain canvas size
   if(w<windowWidth){
     w = 640;
     h = 480;
@@ -379,7 +394,4 @@ function windowSizeCheck(){
     slider.position(cnv.position().x+480,cnv.position().y+h-30);
   }
   slider.style('width', 100*w/640+'px');
-}
-function mousePressed() {
-  //windowSizeCheck()
 }
