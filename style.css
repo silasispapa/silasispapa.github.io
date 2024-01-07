@@ -25,6 +25,15 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 5px;
+
+}
+#navbar #modebutton{
+  background-color: rgba(164, 198, 232, 0.3);
+  border: 2px solid #5e81ac;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 5px;
 }
 
 #container {
@@ -146,11 +155,15 @@ p#error-code {
 #navbar #manualButton {
   color: #2e3440;
   font-size: 20px;
-  background-color: transparent;
-  border: none;
+  background-color: rgba(164, 198, 232, 0.3);
+  border: 2px solid #5e81ac;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 5px;
   cursor: pointer;
   margin-right: 10px;
   transition: background-color 0.3s, color 0.3s;
+  padding: 5px;
 }
 #navbar #manualButton.dark-mode {color: #eceff4;}
 /* Guide modal styles */
@@ -173,9 +186,8 @@ body.guide-modal-open #container {
 
 /* Hover effect*/
 #navbar #manualButton:hover, #navbar #modebutton:hover {
-  background-color: #a5c5e5;
+  background-color: rgba(165, 197, 229, 0.7);
   border-radius: 14px;
-  padding: 3px;
   transition: ease-in-out 0.4s;
 }
 /* Volume Check Button*/
