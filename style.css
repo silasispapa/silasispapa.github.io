@@ -166,10 +166,21 @@ p#error-code {
   padding: 5px;
 }
 #navbar #manualButton.dark-mode {color: #eceff4;}
+
 /* Guide modal styles */
 #manualModal {
   background: #eceff4;
   text-align: left;
+}
+
+#manualModal p, #manualModal ol{
+  margin: 2px;
+  padding: 3px;
+}
+#manualModal li{
+  margin-left: 30px;
+  margin-bottom: 5px;
+
 }
 #manualModal.dark-mode {background-color: #3b4252;}
 #manualModal .modal-content {text-align: left;}

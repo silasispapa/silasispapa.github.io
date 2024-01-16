@@ -24,7 +24,7 @@
 
   <div id="container">
     <p id="camaccess">Please allow camera acces after start.</p>
-    <p id="progstatus">Program not running.</p>
+    <p id="progstatus">Press Start to start the application.</p>
     <p id="error-code">First time loading of the camera takes some time.</p>
     <script src="main.js"></script>
     <script src="alert.js"></script>
@@ -65,11 +65,14 @@
       <p><u><b>Steps</b></u></p>   
       <ol>
         <li>Please sit in front of the camera and make sure your <b>face</b> and <b>shoulder</b> is <b>visible</b>.</li>
-        <li>Please use in a well-lit environment.</li>
-        <li>After starting the program, make sure that 7 points are detected as shown in the picture for best result.</li>
+        <li>Please use in a <b>well-lit environment</b>.</li>
+        <li>Press "<b>Start</b>" to run the application and make sure that at least <b>7 points</b> are detected as shown in the picture for best result.</li>
       </ol>
+      <p><u><b>Cautions!</b></u></p>
+      <p style="color: #bf616a;"><b>Switching to another tab/ minimising the browser will cause the application to run abnormally.</b></p>
+      <p>Leave the tab/browser window open in the background allows the application running smoothly.</p>
       <div id="manualModal-Center">
-        <img src="https://y.gy/guideimage" alt="User Manual Image" width="70%" height="auto">
+        <img src="https://y.gy/guideimage" alt="User Manual Image" width="60%" height="auto">
         <p></p>
         <button id="closeManualBtn"  onclick="toggleManual()">Close</button>
       </div>
