@@ -375,6 +375,7 @@ function StopProgram() {
 //when window resized, call windowSizeCheck()
 function windowResized() {
   windowSizeCheck()
+  if(programstatus==0) drawcameraarea();
 }
 
 //resize canvas according to window size
