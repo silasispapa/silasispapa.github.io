@@ -18,7 +18,7 @@ This web application utilizes PoseNet, a machine learning model, to analyze and 
 
 To use the Sitting Posture Checker:
 
-1. Visit the [web application](https://silasispapa.github.io/).
+1. Visit the [web application](https://silasispapa.github.io/Sitting%20Posture%20Checker/index.html).
 2. Allow camera access when prompted.
 3. Start the program to initiate real-time posture analysis.
 4. Adjust settings as needed.
