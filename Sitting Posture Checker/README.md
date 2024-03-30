@@ -1,6 +1,6 @@
 # Sitting Posture Checker
 
-**Application Link:** [Sitting Posture Checker](https://silasispapa.github.io/)
+**Application Link:** [Sitting Posture Checker]([https://silasispapa.github.io/](https://silasispapa.github.io/Sitting%20Posture%20Checker/index.html))
 
 ## Overview
 
