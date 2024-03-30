@@ -10,7 +10,7 @@ I'm using this GitHub page to showcase my work and host various applications. Fe
 
 Here are some of the applications hosted on this GitHub page:
 
-- [Sitting Posture Checker](link/to/application1)
+- [Sitting Posture Checker](silasispapa.github.io/Sitting%20Posture%20Checker/index.html)
 
 
 You can access these applications by clicking on the links above or navigating through the repositories in this GitHub page.

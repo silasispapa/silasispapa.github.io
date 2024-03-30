@@ -25,6 +25,11 @@ To use the Sitting Posture Checker:
 5. Receive visual and audio feedback on your sitting posture.
 6. Stop the program when finished.
 
+## Update in Future
+
+- Restrict to use only 7 points instead of 34 points from PoseNet callback
+- Recollect and train for the classification model
+
 ## Credits
 
 - ml5.js
