@@ -1,0 +1,55 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #434c5e;
+    color: #eee;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.nav li {
+    margin-bottom: 1rem;
+    padding: 3px;
+}
+
+.nav a {
+    color: #e5e9f0;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #81a1c1;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.nav a:hover {
+    background-color: #5e81ac;
+}
+
+/* Main content area styles */
+main {
+    max-width: 800px;
+    padding: 1rem;
+    text-align: center;
+}

@@ -1,7 +1,7 @@
 // Original code by: The Coding Train / Daniel Shiffman
 // https://youtu.be/FYgYyq-xqAw
-// Modified and improved by Justin Yong Ji Yii for application:
-// Sitting Pose Estimation using PoseNet and Classification Model
+// Modified and improved by Justin Yong for application:
+// Sitting Posture Checker using PoseNet and Classification Model
 
 let cnv;
 let video;
@@ -103,9 +103,9 @@ function StartProgram() {
     //clssiification model loading
     classification_model = ml5.neuralNetwork(options);
     const modelInfo = {
-      model: 'model/model.json',
-      metadata: 'model/model_meta.json',
-      weights: 'model/model.weights.bin',
+      model: '../model/model.json',
+      metadata: '../model/model_meta.json',
+      weights: '../model/model.weights.bin',
     };
 
     classification_model.load(modelInfo, classification_modelLoaded);

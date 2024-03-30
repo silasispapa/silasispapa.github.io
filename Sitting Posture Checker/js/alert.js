@@ -1,6 +1,6 @@
 let alertsound;
 function preload(){
-  alertsound = createAudio('alert/bell.wav',alert_load);
+  alertsound = createAudio('../src/bell.wav',alert_load);
 }
 
 function alert_load(){

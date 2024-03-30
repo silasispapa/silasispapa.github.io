@@ -1,32 +1,21 @@
-# Sitting Posture Checker
+# My Personal GitHub Page
 
-**Application Link:** [Sitting Posture Checker](https://silasispapa.github.io/)
+This is my personal GitHub page where I host some of my applications and projects.
 
-## Overview
+## About
 
-This web application utilizes PoseNet, a machine learning model, to analyze and evaluate the user's sitting posture in real-time. The core functionality is based on the original code by [The Coding Train / Daniel Shiffman](https://www.youtube.com/watch?v=FYgYyq-xqAw), with modifications and improvements added to tailor it for specific use cases.
+I'm using this GitHub page to showcase my work and host various applications. Feel free to explore the repositories and projects hosted here.
 
-## Features
+## Applications
 
-- Real-time posture analysis using PoseNet
-- User-friendly interface
-- Adjustable settings for personalized experience
-- Visual feedback on posture conditions
-- Volume check functionality for audio feedback
+Here are some of the applications hosted on this GitHub page:
 
-## Getting Started
+- [Sitting Posture Checker](link/to/application1)
+- [Application 2 Name](link/to/application2)
+- [Application 3 Name](link/to/application3)
 
-To use the Sitting Posture Checker:
+You can access these applications by clicking on the links above or navigating through the repositories in this GitHub page.
 
-1. Visit the [web application](https://silasispapa.github.io/).
-2. Allow camera access when prompted.
-3. Start the program to initiate real-time posture analysis.
-4. Adjust settings as needed.
-5. Receive visual and audio feedback on your sitting posture.
-6. Stop the program when finished.
+## Contact
 
-## Credits
-
-- ml5.js
-- p5.js
-- The Coding Train / Daniel Shiffman
+If you have any questions or would like to get in touch, feel free to reach out to me at [silasmarshall544@gmail.com].
