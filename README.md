@@ -8,7 +8,7 @@ I'm using this GitHub page to showcase my work and host various applications. Fe
 
 ## Applications
 
-Here are some of the applications hosted on this GitHub page:
+Here are some of the applications hosted on this [GitHub page](https://silasispapa.github.io/):
 
 - [Sitting Posture Checker](https://github.com/silasispapa/silasispapa.github.io/tree/main/Sitting%20Posture%20Checker)
 
