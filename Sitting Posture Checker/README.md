@@ -27,7 +27,7 @@ To use the Sitting Posture Checker:
 
 ## Update in Future
 
-- Restrict to use only 7 points instead of 34 points from PoseNet callback
+- Restrict to use only 7 points instead of 17 points from PoseNet callback
 - Recollect and train for the classification model
 
 ## Credits
